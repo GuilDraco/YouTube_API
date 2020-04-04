@@ -6,19 +6,19 @@ projeto está implementado com androidX.
 
 Bibliotecas usadas:
 
-    **RETROFIT**
+    * **RETROFIT** *
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 
-    **YOUTUBE**
+    * **YOUTUBE** *
     implementation files("libs/YouTubeAndroidPlayerApi.jar")
 
-    **SEARCHVIEW**
+    * **SEARCHVIEW** *
     implementation 'com.miguelcatalan:materialsearchview:1.4.0'
 
-    **SHIMMER FACEBOOK**
+    * **SHIMMER FACEBOOK** *
     implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
     implementation 'androidx.cardview:cardview:1.0.0'
 
-    **PICASSO**
+    * **PICASSO** *
     implementation 'com.squareup.picasso:picasso:2.71828'
