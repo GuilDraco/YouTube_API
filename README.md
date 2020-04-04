@@ -22,3 +22,5 @@ implementation 'androidx.cardview:cardview:1.0.0'
 
 * PICASSO
 implementation 'com.squareup.picasso:picasso:2.71828'
+
+![Amostra do Projeto](https://github.com/GuilDraco/YouTube_API/blob/master/20200403_230336%5B1%5D.gif)
