@@ -4,7 +4,7 @@ Projeto demonstrando uso da biblioteca do youtube com AndroidX.
 Projeto onde recupero os dados da biblioteca do Youtube e demonstro como apresentar o vídeo na tela com os demais vídeos do canal abaixo, 
 projeto está implementado com androidX.
 
-Bibliotecas usadas:
+## Bibliotecas usadas:
 
     * **RETROFIT** *
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
