@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.s.youtubeapi.Activitys.MainActivity">
+
+    <include
+        layout="@layout/toolbar_video"
+        android:id="@+id/toolbarInclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- RecyclerView to display list of Videos in Horizontal direction -->
+    <fragment
+        android:id="@+id/youtube_player_fragment"
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragmentX"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/toolbarInclude"/>
+
+    <ImageView
+        android:id="@+id/imagemCapa"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignTop="@+id/youtube_player_fragment"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/imgcapa"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/fundo_video" />
+
+    <TextView
+        android:id="@+id/textoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youtube_player_fragment"
+        android:textColor="@color/colorPreto"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="@string/textotitulo" />
+
+    <TextView
+        android:id="@+id/textoDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textoTitulo"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone"
+        android:text="@string/textodescricao" />
+
+    <include
+        layout="@layout/divisor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_above="@+id/recycler_view" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:orientation="vertical">
+            <include layout="@layout/videos_placeholder_layout" />
+            <include layout="@layout/videos_placeholder_layout" />
+            <include layout="@layout/videos_placeholder_layout" />
+            <include layout="@layout/videos_placeholder_layout" />
+            <include layout="@layout/videos_placeholder_layout" />
+            <include layout="@layout/videos_placeholder_layout" />
+            <include layout="@layout/videos_placeholder_layout" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textoDescricao"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

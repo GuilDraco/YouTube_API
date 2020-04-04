@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YouTube API</string>
+
+    <string name="btn_play">btn_play</string>
+    <string name="imgcapa">imgCapa</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="divisor">divisor</string>
+    <string name="textotitulo">textoTitulo</string>
+    <string name="textodescricao">textoDescricao</string>
+</resources>
