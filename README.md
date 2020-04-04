@@ -13,7 +13,7 @@ Bibliotecas usadas:
     **YOUTUBE**
     implementation files("libs/YouTubeAndroidPlayerApi.jar")
 
-    **SERRCHVIEW**
+    **SEARCHVIEW**
     implementation 'com.miguelcatalan:materialsearchview:1.4.0'
 
     **SHIMMER FACEBOOK**
