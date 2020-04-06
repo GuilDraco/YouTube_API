@@ -2,7 +2,7 @@ package com.s.youtubeapi.Helper;
 
 public class VideosConfig {
 
-    public static String CANAL_ID = "UC85_JU9GbX92rSz0IGkJumA";
-    public static String KEY_YOUTUBE_API = "AIzaSyD6i2Kjfj2hOjBqMJSEkj_CqoRAtSfINrk";
+    public static String CANAL_ID = "ID_SEU_CANAL";
+    public static String KEY_YOUTUBE_API = "SUA_CHAVE_API_YOUTUE";
     static String URL_BASE = "https://www.googleapis.com/youtube/v3/";
 }
